@@ -8,7 +8,9 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.paint
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
@@ -25,7 +27,9 @@ import com.starglen.zawadimart.R
 @Composable
 fun HomeScreen(navController: NavController){
     Column(
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier
+            .fillMaxSize()
+            .paint(painter = painterResource(R.drawable.img_6), contentScale = ContentScale.FillBounds)
     ) {
         Text(
             text = "ZawadiMart",
