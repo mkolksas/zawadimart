@@ -42,7 +42,7 @@ import com.viewmodel.AuthViewModel
 fun AppNavHost(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
-    startDestination: String = ROUT_FORM
+    startDestination: String = ROUT_LOGIN
 ) {
 
     val context = LocalContext.current
